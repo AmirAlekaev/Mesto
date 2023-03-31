@@ -31,6 +31,6 @@ function handleFormSubmit(evt) {
 
 popupElementOpen.addEventListener('click', openPopup);
 popupElementClose.addEventListener('click', closePopup);
-//popupElement.addEventListener('click', closePopupClickOverlay);
+popupElement.addEventListener('click', closePopupClickOverlay);
 popupElementForm.addEventListener('submit', handleFormSubmit);
 
