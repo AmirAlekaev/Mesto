@@ -13,16 +13,16 @@
 @import url(../blocks/page/page.css);
 
 /*popap*/
-@import url(../blocks/popap/popap.css);
-@import url(../blocks/popap/__button-close/popap__button-close.css);
-@import url(../blocks/popap/__button_submit/popap__button_submit.css);
-@import url(../blocks/popap/__container/popap__container.css);
-@import url(../blocks/popap/__form/popap__form.css);
-@import url(../blocks/popap/_opened/popap_opened.css);
-@import url(../blocks/popap/__input/popap__input.css);
-@import url(../blocks/popap/__input/_type_name/popap__input_type_name.css);
-@import url(../blocks/popap/__input/_type_job/popap__input_type_job.css);
-@import url(../blocks/popap/__title/popup__title.css);
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_opened/popup_opened.css);
+@import url(../blocks/popup/__title/popup__title.css);
+@import url(../blocks/popup/__input/popup__input.css);
+@import url(../blocks/popup/__input/_type_name/popup__input_type_name.css);
+@import url(../blocks/popup/__input/_type_job/popup__input_type_job.css);
+@import url(../blocks/popup/__form/popup__form.css);
+@import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/__button_submit/popup__button_submit.css);
+@import url(../blocks/popup/__button-close/popup__button-close.css);
 
 /*profile*/
 @import url(../blocks/profile/profile.css);
