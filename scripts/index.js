@@ -9,7 +9,7 @@ let profileName = document.querySelector('.profile-info__name');                
 let profileJob = document.querySelector('.profile-info__job');
 //console.log(profileName);
 // Найти данные - job на странице
-let inputName = popupElement.querySelector('.popup__imput_type_name');                  // Найти поле ввода - name в форме редактирования профиля
+let inputName = popupElement.querySelector('.popup__input_type_name');                  // Найти поле ввода - name в форме редактирования профиля
 let inputJob = popupElement.querySelector('.popup__input_type_job');                    // Найти поле ввода - job в форме редактирования профиля
 
 function openPopup() {                                                     // открытие попап
@@ -31,6 +31,6 @@ function handleFormSubmit(evt) {
 
 popupElementOpen.addEventListener('click', openPopup);
 popupElementClose.addEventListener('click', closePopup);
-popupElement.addEventListener('click', closePopupClickOverlay);
+//popupElement.addEventListener('click', closePopupClickOverlay);
 popupElementForm.addEventListener('submit', handleFormSubmit);
 
