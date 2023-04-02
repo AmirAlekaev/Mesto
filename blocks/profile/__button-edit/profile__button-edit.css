@@ -1,4 +1,4 @@
-.profile__edit-button {
+.profile__button-edit {
     width: 24px;
     height: 24px;
     background: #000 url(../../../image/pen.svg) no-repeat top 50% left 50%;
@@ -9,12 +9,12 @@
     transition: opacity 0.5s ease;
 }
 
-.profile__edit-button:hover {
+.profile__button-edit:hover {
     opacity: 0.6;
 }
 
 @media screen and (max-width: 600px) {
-    .profile__edit-button {
+    .profile__button-edit {
         width: 18px;
         height: 18px;
         margin-left: 10px;

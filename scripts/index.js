@@ -1,7 +1,7 @@
 
 const popupElement = document.querySelector('.popup');
 const popupElementClose = popupElement.querySelector('.popup__button-close');       // находим кнопку для закрытия попапа редактирования профиля
-const popupElementOpen = document.querySelector('.profile__edit-button');           // находим кнопку для открытия попапа редактирования профиля
+const popupElementOpen = document.querySelector('.profile__button-edit');           // находим кнопку для открытия попапа редактирования профиля
 const popupElementForm = popupElement.querySelector('.popup__form');                // Найти форму popup изменения профиля
 // const popupCloseList = document.querySelectorAll('.popup__button-close');           //кнопка закрытия попап
 
@@ -13,13 +13,13 @@ let inputName = popupElement.querySelector('.popup__input_type_name');          
 let inputJob = popupElement.querySelector('.popup__input_type_job');                    // Найти поле ввода - job в форме редактирования профиля
 
 function openPopup() {                                                     // открытие попап
-    popupElement.classList.add('popup_opened');
+    popupElement.classList.add('popup__opened');
     inputName.value = profileName.textContent;
     inputJob.value = profileJob.textContent;
 }
 
 function closePopup() {                                                     // закрытие попап
-    popupElement.classList.remove('popup_opened');
+    popupElement.classList.remove('popup__opened');
 }
 
 function handleFormSubmit(evt) {
