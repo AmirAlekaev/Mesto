@@ -1,6 +1,7 @@
 .elements {
     max-width: 880px;
     margin: 0 auto;
+    padding: 0 19px;
     display: grid;
     grid-template-columns: repeat(auto-fit, 282px);
     column-gap: 17px;
@@ -8,8 +9,6 @@
     justify-content: center;
 }
 
-@media screen and (max-width: 880px) {
-    .elements {
-        padding: 0 19px;
-    }
+@media screen and (max-width: 340px) {
+    .elements {}
 }

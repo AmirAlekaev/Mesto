@@ -8,6 +8,8 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
+    width: 358px;
+    height: 50px;
     text-align: center;
     color: #FFF;
     cursor: pointer;
@@ -25,6 +27,6 @@
     .popup__button-submit {
         font-size: 14px;
         line-height: 17px;
-        margin-top: 15px;
+        padding-bottom: 14px;
     }
 }

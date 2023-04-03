@@ -13,13 +13,13 @@ let inputName = popupElement.querySelector('.popup__input_type_name');          
 let inputJob = popupElement.querySelector('.popup__input_type_job');                    // Найти поле ввода - job в форме редактирования профиля
 
 function openPopup() {                                                     // открытие попап
-    popupElement.classList.add('popup__opened');
+    popupElement.classList.add('popup_opened');
     inputName.value = profileName.textContent;
     inputJob.value = profileJob.textContent;
 }
 
 function closePopup() {                                                     // закрытие попап
-    popupElement.classList.remove('popup__opened');
+    popupElement.classList.remove('popup_opened');
 }
 
 function handleFormSubmit(evt) {

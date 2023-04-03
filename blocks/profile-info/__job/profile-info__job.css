@@ -11,16 +11,17 @@
     white-space: nowrap;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 937.5px) {
     .profile-info__job {
+        text-align: center;
         font-size: 14px;
         line-height: 17px;
+        margin-bottom: 36px;
     }
 }
 
 @media screen and (max-width: 600px) {
     .profile-info__job {
-        text-align: center;
         max-width: 282px;
     }
 }

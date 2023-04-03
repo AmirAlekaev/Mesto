@@ -14,9 +14,20 @@
     opacity: 0.6;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 937.5px) {
     .profile__button-add {
         width: 100%;
+        padding: 0;
+        background: rgb(0, 0, 0, 0) url(../../../image/small.svg) no-repeat top 50% left 50%;
+        max-width: 581px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 637.5px) {
+    .profile__button-add {
+        width: 100%;
+        padding: 0;
         background: rgb(0, 0, 0, 0) url(../../../image/small.svg) no-repeat top 50% left 50%;
         max-width: 282px;
         margin: 0;
