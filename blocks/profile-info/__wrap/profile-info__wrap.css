@@ -1,5 +1,6 @@
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 310px) {
     .profile-info__wrap {
-        padding-left: 31px;
+        padding-left: 30px;
+
     }
 }
