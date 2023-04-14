@@ -11,8 +11,8 @@ const inputJob = document.querySelector('.popup__input_type_job');              
 const popupPlace = document.querySelector('.popup_place');                             // Найти popup редактирования карточек
 const popupOpenAdd = document.querySelector('.profile__button-add');                    // Найти кнопку открытия редактирования карточек
 const popupFormPlace = popupPlace.querySelector('.popup__form_place');                  // Найти форму popup изменения карточек
-const popupFormTitle = popupPlace.querySelector('.popup_imput_title');                 // Найти поле ввода - название региона в форме добавления карточки
-const popupFormLink = popupPlace.querySelector('.popup_imput_link');                   // Найти поле ввода - ссылки на фото в форме добавления карточки
+const popupFormTitle = popupPlace.querySelector('.popup__imput_type_title');                 // Найти поле ввода - название региона в форме добавления карточки
+const popupFormLink = popupPlace.querySelector('.popup__imput_type_link');                   // Найти поле ввода - ссылки на фото в форме добавления карточки
 
 //Popup открытия просмотра изображения
 const popupImage = document.querySelector('.popup_image');                             // Найти popup открытия просмотра увеличенного изображения
