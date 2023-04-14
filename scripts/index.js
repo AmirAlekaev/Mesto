@@ -20,7 +20,7 @@ const elementImage = document.querySelector('.popup__img');                     
 const elementTitle = document.querySelector('.popup__name');                            // Найти описание региона
 
 //Кнопка закрытия Popup
-const popupClose = document.querySelectorAll('.popup__button-close');                   // Найти ВСЕ кнопки закрытия Popup
+const popupCloseList = document.querySelectorAll('.popup__button-close');                   // Найти ВСЕ кнопки закрытия Popup
 
 // Добавление карточек
 const cardTemplate = document.querySelector('.template__card').content;                 // Найти шаблон карточки для добавления
@@ -55,7 +55,7 @@ const initialCards = [
 ];
 
 //Функция создания карточки с возможностью выполнить лайк-дизлайк, удаление карточки
-const allCard = (wrap) => {
+const createCard = (cardData) => {
     const cardElement = cardTemplate.querySelector('.element').cloneNode(true);              // Клонировать содержимое тега template
     const cardElementTitle = cardElement.querySelector('.element__title');                   // Найти в шаблоне заголовок
     const cardElementPhoto = cardElement.querySelector('.element__img');                     // Найти в шаблоне фотографию
@@ -64,8 +64,11 @@ const allCard = (wrap) => {
     cardElement.querySelector('.element__like').addEventListener('click', cardLike);        // Найти кнопку нравится/ненравится и отследить действие
     cardElement.querySelector('.element__img').addEventListener('click', cardPhoto);          // Найти фотографию для открытия и отследить действие
 
-    cardElementTitle.textContent = wrap.name;                                                 // Присвоить значение name заголовку
-    cardElementPhoto.src = wrap.link;                                                         // Присвоить значение link ссылке на картинку
+    cardElementTitle.textContent = cardData.name;                                                 // Присвоить значение name заголовку
+    cardElementPhoto.src = cardData.link;                                                         // Присвоить значение link ссылке на картинку
+    cardElementPhoto.alt = cardData.alt;                                                         // Присвоить описание картинке
+
+
 
     return cardElement;                                                                        // Отобразить карточку на странице
 };
@@ -74,12 +77,13 @@ const allCard = (wrap) => {
 function cardPhoto(evt) {
     openPopup(popupImage);
     elementImage.src = evt.target.closest('.element__img').src;
+    elementImage.alt = evt.target.closest('.element').textContent;
     elementTitle.textContent = evt.target.closest('.element').textContent;
 };
 
 //Создание карточек из массива
-initialCards.forEach((wrap) => {
-    cardOnline.append(allCard(wrap));
+initialCards.forEach((cardData) => {
+    cardOnline.append(createCard(cardData));
 });
 
 //Общая функция открытия Popup
@@ -108,7 +112,7 @@ popupFormProfile.addEventListener('submit', (evt) => {
 });
 
 //Закрытие всех Popup при нажатии на крестик
-popupClose.forEach((item) => {
+popupCloseList.forEach((item) => {
     item.addEventListener('click', (evt) => {
         const popupClosest = evt.target.closest('.popup');
         closePopup(popupClosest);
@@ -133,8 +137,8 @@ popupFormPlace.addEventListener('submit', (evt) => {
 });
 
 //Функция добавления новой карточки в начало блока с данными из PopUp добавления новой карточки местности
-const renderCard = (wrap) => {
-    cardOnline.prepend(allCard(wrap));
+const renderCard = (cardData) => {
+    cardOnline.prepend(createCard(cardData));
 };
 
 //Функция лайк-дизлайка карточки
