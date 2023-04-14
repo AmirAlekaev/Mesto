@@ -22,7 +22,7 @@
 @import url(../blocks/popup/__button-submit/popup__button-submit.css);
 @import url(../blocks/popup/__button-close/popup__button-close.css);
 @import url(../blocks/popup/__img/popup__img.css);
-@import url(../blocks/popup/__image/_container/popup__image_container.css);
+@import url(../blocks/popup/_image/_container/popup_image_container.css);
 @import url(../blocks/popup/__name/popup__name.css);
 
 /*profile*/

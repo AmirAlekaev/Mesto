@@ -1,5 +1,5 @@
 ///Popup редактирования профиля
-const popupProfile = document.querySelector('.popup__profile');                         // Найти popup редактирования профиля
+const popupProfile = document.querySelector('.popup_profile');                         // Найти popup редактирования профиля
 const popupOpenEdit = document.querySelector('.profile__button-edit');                   // Найти кнопку открытия редактирования профиля
 const popupFormProfile = popupProfile.querySelector('.popup__form_profile');            // Найти форму popup изменения профиля
 const profileName = document.querySelector('.profile-info__name');                     // Найти данные - name на странице
@@ -7,15 +7,15 @@ const profileJob = document.querySelector('.profile-info__job');                
 const inputName = document.querySelector('.popup__input_type_name');                    // Найти поле ввода - name в форме редактирования профиля
 const inputJob = document.querySelector('.popup__input_type_job');                      // Найти поле ввода - job в форме редактирования профиля
 
-//Popup редактирования карточек региона
-const popupPlace = document.querySelector('.popup__place');                             // Найти popup редактирования карточек
+//Popup редактирования карточек
+const popupPlace = document.querySelector('.popup_place');                             // Найти popup редактирования карточек
 const popupOpenAdd = document.querySelector('.profile__button-add');                    // Найти кнопку открытия редактирования карточек
 const popupFormPlace = popupPlace.querySelector('.popup__form_place');                  // Найти форму popup изменения карточек
-const popupFormTitle = popupPlace.querySelector('.popup__imput_title');                 // Найти поле ввода - название региона в форме добавления карточки
-const popupFormLink = popupPlace.querySelector('.popup__imput_link');                   // Найти поле ввода - ссылки на фото в форме добавления карточки
+const popupFormTitle = popupPlace.querySelector('.popup_imput_title');                 // Найти поле ввода - название региона в форме добавления карточки
+const popupFormLink = popupPlace.querySelector('.popup_imput_link');                   // Найти поле ввода - ссылки на фото в форме добавления карточки
 
 //Popup открытия просмотра изображения
-const popupImage = document.querySelector('.popup__image');                             // Найти popup открытия просмотра увеличенного изображения
+const popupImage = document.querySelector('.popup_image');                             // Найти popup открытия просмотра увеличенного изображения
 const elementImage = document.querySelector('.popup__img');                             // Найти изображение
 const elementTitle = document.querySelector('.popup__name');                            // Найти описание региона
 
