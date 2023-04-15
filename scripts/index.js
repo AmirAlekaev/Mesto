@@ -59,16 +59,12 @@ const createCard = (cardData) => {
     const cardElement = cardTemplate.querySelector('.element').cloneNode(true);              // Клонировать содержимое тега template
     const cardElementTitle = cardElement.querySelector('.element__title');                   // Найти в шаблоне заголовок
     const cardElementPhoto = cardElement.querySelector('.element__img');                     // Найти в шаблоне фотографию
-
     cardElement.querySelector('.element__basket').addEventListener('click', cardDel);         // Найти кнопку закрытия и отследить действие
     cardElement.querySelector('.element__like').addEventListener('click', cardLike);        // Найти кнопку нравится/ненравится и отследить действие
     cardElement.querySelector('.element__img').addEventListener('click', cardPhoto);          // Найти фотографию для открытия и отследить действие
-
     cardElementTitle.textContent = cardData.name;                                                 // Присвоить значение name заголовку
     cardElementPhoto.src = cardData.link;                                                         // Присвоить значение link ссылке на картинку
-    cardElementPhoto.alt = cardData.alt;                                                         // Присвоить описание картинке
-
-
+    cardElementPhoto.alt = cardData.name;                                                         // Присвоить описание картинке
 
     return cardElement;                                                                        // Отобразить карточку на странице
 };
@@ -123,7 +119,6 @@ popupCloseList.forEach((item) => {
 popupOpenAdd.addEventListener('click', () => {
     openPopup(popupPlace);
 });
-
 
 //Функция сохранения внесенных в формы popup данных (название региона и ссылку на фото) при закрытии окна
 popupFormPlace.addEventListener('submit', (evt) => {
